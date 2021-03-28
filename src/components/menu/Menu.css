@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 20%;
+}
+
+.boton {
+    background-color: black;
+    color: floralwhite;
+    padding: 10px 20px;
+    margin-right: 5px;
+    border: black solid 3px;
+    font-family: inherit;
+    font-size: large;
+}
+
+.boton-container {
+    flex-direction: row;
+    margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: block;
+    }
+}
