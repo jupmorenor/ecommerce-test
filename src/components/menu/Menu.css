@@ -11,17 +11,22 @@
     padding: 10px 20px;
     margin-right: 5px;
     border: black solid 3px;
+}
+
+.font-class {
     font-family: inherit;
     font-size: large;
 }
 
 .boton-container {
-    flex-direction: row;
+    text-align: left;
+    flex: 100%;
     margin: 5px;
 }
 
 @media screen and (max-width: 768px) {
     .container {
         display: block;
+        text-align: left;
     }
 }
