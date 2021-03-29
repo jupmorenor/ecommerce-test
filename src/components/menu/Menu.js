@@ -6,7 +6,7 @@ import {
     faPhone,
     faMapMarkerAlt,
     faMapMarkedAlt,
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 import './Menu.css';
 
 
@@ -225,6 +225,10 @@ class Menu extends Component {
         const errores = this.validarCampos();
 
         return(
+            <>
+            <header className="App-header">
+                <h1>DIRECCIÓN DE ENVÍO</h1>
+            </header>
             <form onSubmit={this.submitForm} >
             <div className='container'>
                 {
@@ -248,6 +252,7 @@ class Menu extends Component {
                 <label className='font-class' ><input type='checkbox' name='facturacion' onChange={this.inputChange} /> Utilizar como dirección de facturación</label>
             </div>
             </form>
+            </>
         );
     }
 }

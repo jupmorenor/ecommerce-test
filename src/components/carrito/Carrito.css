@@ -1,0 +1,50 @@
+.carrito-compras {
+    padding: 0 30%;
+}
+
+.carrito-header {
+    padding: 5px;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: lightgrey;
+    font-weight: bold;
+}
+
+.subtotal p {
+    flex: 45%;
+}
+
+.boton-carrito-container {
+    padding: 5%;
+    text-align: right;
+    border: lightgrey solid 1px;
+}
+
+.boton-carrito {
+    padding: 2% 4%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .carrito-compras {
+        padding: 0;
+    }
+}

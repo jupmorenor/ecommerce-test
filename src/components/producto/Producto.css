@@ -1,0 +1,20 @@
+.producto-container {
+    display: flex;
+    border: lightgrey solid 1px;
+    align-items: center;
+}
+
+.producto-imagen {
+    flex: 25%;
+    padding: 5%;
+}
+
+.producto-nombre {
+    flex: 50%;
+    font-weight: lighter;
+}
+
+.producto-precio {
+    flex: 25%;
+    font-weight: bold;
+}

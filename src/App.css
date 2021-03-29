@@ -1,17 +1,3 @@
 .App {
   text-align: center;
 }
-
-.App-header {
-  padding: 0 2%;
-  text-align: left;
-  color: black;
-  border-bottom: black solid 3px;
-}
-
-
-@media screen and (max-width: 768px) {
-  .App-header {
-    text-align: center;
-  }
-}
