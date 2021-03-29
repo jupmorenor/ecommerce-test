@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Switch>
-          <Route path='/' component={Carrito} />
-          <Route path='/direccion-envio' component={Menu} />
+          <Route path='/carrito' component={Carrito} />
+          <Route exact path='/direccion' component={() => <Menu />} />
         </Switch>
       </div>
     </BrowserRouter>

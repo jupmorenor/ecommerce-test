@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import Producto from '../producto/Producto';
 import './Carrito.css'
 
@@ -6,11 +7,12 @@ function Carrito() {
     const [productos, actualizarProductos] = useState([]);
     var subtotal = 0;
 
-    fetch('https://blackisp.herokuapp.com/products').then(
-        response => response.json()
-    ).then(datos => {
-        actualizarProductos(datos);
-    }).catch(error => alert('Error al cargar los productos')); 
+    useEffect(() => fetch('https://blackisp.herokuapp.com/products').then(
+            response => response.json()
+        ).then(datos => {
+            actualizarProductos(datos);
+        }).catch(error => alert('Error al cargar los productos'))
+    )
      
 
     return (
@@ -24,7 +26,7 @@ function Carrito() {
                 })
             }
             <div className='boton-carrito-container'>
-                <button className='boton-carrito' type='button'>EDITAR</button>
+                <NavLink className='boton-carrito' to='/direccion'>EDITAR</NavLink>
             </div>
             <div className='subtotal'>
                 <p>SUBTOTAL</p>
